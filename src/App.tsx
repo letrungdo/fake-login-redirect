@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -18,6 +18,13 @@ function App() {
         >
           Learn React
         </a>
+        <button
+          onClick={() => {
+              window.location.href = "http://localhost:4000/auth/callback";
+          }}
+        >
+          Redirect
+        </button>
       </header>
     </div>
   );
